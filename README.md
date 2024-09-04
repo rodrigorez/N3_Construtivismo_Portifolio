@@ -1,4 +1,5 @@
-# grupoN3_construtivismo
+# grupoN3_portifolio
+
 # Projeto
 
 Este Projeto foi criado para acompanhamento dos alunos da materia de Projeto em Design: Digital
