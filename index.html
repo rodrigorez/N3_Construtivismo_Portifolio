@@ -1,89 +1,165 @@
 <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coletivo Revolui</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-<html lang="pt-br">
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
 
-  <head>
-   <meta charset="UTF-8">
-    <title>Construtivismo Russo</title>
-    <link rel="stylesheet" href="./style.css">
-    
-    <!-- Aqui começa o menu principal, onde ficaram o link do scroll para tela-->
-    
-    <nav>
-      <a>
-        <h1>
-         <a href= "www.coletivorevolui.com">
-           <img src= "https://i.postimg.cc/sD6K4zZs/temp-Image-Dv-Nia-K.avif" style="width:100 height:100>
-        </h1>
-            <a href="/Sobre-nos/">Sobre Nós</a>
-            <a href="/Artistas/">Artistas</a>
-            <a href="/Contato/">contato</a>
-            <a href="/Manifesto comunista/">Artistas</a>
-      </a>
-    </nav>
-  </head>
+        header {
+            background: #e74c3c;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
 
+        .logo img {
+            max-width: 150px;
+        }
 
-  <body>
-  <h2> Sobre Nós:</h2>
-    <p>
-      O Coletivo Revolui é uma força criativa dedicada à transformação através da arte. <br>
-      Inspirados pelos ideais revolucionários do Construtivismo Russo, nossa missão é conectar a estética moderna à função prática, valorizando a geometria, a inovação e o impacto social. <br>
-      Atuamos como engenheiros visuais, construindo experiências que unem arte e tecnologia, alinhadas à produção contemporânea. <br>
-      Com uma abordagem colaborativa, trazemos à vida as obras de visionários como Alexander Rodchenko,El Lissitzky, e os irmãos Vladimir e Georgi Stenberg, cuja contribuição ao design cria um diálogo com a contemporaneidade e o funcionalismo. <br>
-      Nosso trabalho é um tributo à sua capacidade de romper com o convencional e explorar novos territórios visuais e funcionais. <br>
-      Como coletivo, acreditamos que a arte não é um fim, mas um meio para transformar a sociedade. <br>
-      Nossas criações são construções de ideias — um convite para ver o mundo de forma mais eficiente, funcional e bela.
-    </p>
-    <br>
+        nav ul {
+            list-style: none;
+        }
 
-    !-- Aqui começa o descritivo de cada artísta-!
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
 
-    
-    <h2>
-      Artistas:
-    </h2>
-    <br>
-    <h3>
-      Alexander Rodchenko
-    </h3>
-        <p>
-          Alexander Rodchenko é um criador que desafia limites e redefine a arte visual. <br>
-          No Coletivo Revolui, ele trabalha para unir forma e função em projetos que servem ao progresso social. <br>
-          Com uma mente voltada para a revolução estética, Rodchenko nos convida a construir um futuro em que a arte seja ferramenta de transformação.
-        </p>
-    <br>
-          <h3>
-          Obras:
-          </h3>
-            <a>
-               <img src=" https://i.postimg.cc/nz4QR4Rq/temp-Image-E3-JXjv.avif " />
-            </a>
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
 
-          <h3>
-      El Lissitzky
-          </h3>
-        <p>
-        El Lissitzky é um visionário que reimagina o espaço e a comunicação através da arte. <br>
-        No Coletivo Revolui, ele busca parceiros criativos que queiram explorar novas formas de expressão visual e arquitetônica. <br>
-        Sua missão é construir um diálogo entre arte e tecnologia, abrindo caminho para um design que ultrapassa fronteiras.
-        </p>
-    <br>    
-        <h3>
-          Vladimir e Georgi Stenberg
-        </h3>
-        <p>
-          Vladimir e Georgi Stenberg são mestres em criar movimento e energia visual. <br>
-          No Coletivo Revolui, eles abrem espaço para aqueles que compartilham da vontade de romper com o comum e levar a criatividade a novos níveis. <br>
-          Com uma abordagem ousada e experimental, os Stenberg convidam todos a participar de uma jornada onde cada projeto é uma oportunidade de inovação.
-        </p>
-          
-  </body>
+        main {
+            padding: 20px;
+        }
 
-  <footer>
-<p>
-  Vem construir uma arte revolucionária com a gente, Filie-se!;
-</p>
-    
-  </footer>
+        h2 {
+            margin-bottom: 15px;
+        }
+
+        .artista {
+            margin-bottom: 30px;
+            padding: 15px;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer-content form {
+            margin-top: 10px;
+        }
+
+        .footer-content input[type="email"] {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        .footer-content button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            background: #e74c3c;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://i.postimg.cc/sD6K4zZs/temp-Image-Dv-Nia-K.avif" alt="Logo do Coletivo Revolui">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#artistas">Artistas</a></li>
+                <li><a href="#sobre">Sobre nós</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#manifesto">Manifesto Comunista</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sobre">
+            <h2>Sobre nós</h2>
+            <p>
+                O Coletivo Revolui é uma força criativa dedicada à transformação através da arte. Inspirados pelos ideais revolucionários do Construtivismo Russo, nossa missão é conectar a estética moderna à função prática, valorizando a geometria, a inovação e o impacto social. Atuamos como engenheiros visuais, construindo experiências que unem arte e tecnologia, alinhadas à produção contemporânea.
+                <br><br>
+                Como coletivo, acreditamos que a arte não é um fim, mas um meio para transformar a sociedade. Nossas criações são construções de ideias — um convite para ver o mundo de forma mais eficiente, funcional e bela.
+            </p>
+            <p><strong>Simplifique e Revolucione</strong></p>
+        </section>
+
+        <section id="artistas">
+            <h2>Artistas</h2>
+
+            <div class="artista">
+                <h3>Alexander Rodchenko</h3>
+                <p>Alexander Rodchenko é um criador que desafia limites e redefine a arte visual. Ele trabalha para unir forma e função em projetos que servem ao progresso social.</p>
+                <strong>Principais Obras:</strong>
+                <ul>
+                    <li><a href="https://www.wikiart.org/pt/alexander-rodchenko/books-1924">Books, 1924</a></li>
+                    <li><a href="https://www.wikiart.org/pt/alexander-rodchenko/cover-of-book-about-that-1923">Cover book "About that", 1923</a></li>
+                    <li><a href="https://www.wikiart.org/pt/alexander-rodchenko/promotional-poster-for-rezinotrest-1923">Promotional poster for Rezinotrest, 1923</a></li>
+                </ul>
+            </div>
+
+            <div class="artista">
+                <h3>El Lissitzky</h3>
+                <p>El Lissitzky é um visionário que reimagina o espaço e a comunicação através da arte. Sua missão é construir um diálogo entre arte e tecnologia.</p>
+                <strong>Principais Obras:</strong>
+                <ul>
+                    <li><a href="https://www.wikiart.org/pt/el-lissitzky/building-in-moscow-1929">Building in Moscow, 1929</a></li>
+                    <li><a href="https://www.wikiart.org/pt/el-lissitzky/novo-homem-1923">Novo Homem, 1923</a></li>
+                    <li><a href="https://www.wikiart.org/pt/el-lissitzky/beat-the-whites-with-the-red-wedge-1920">Beat the Whites with the Red Wedge, 1920</a></li>
+                </ul>
+            </div>
+
+            <div class="artista">
+                <h3>Vladimir e Georgi Stenberg</h3>
+                <p>Vladimir e Georgi Stenberg são mestres em criar movimento e energia visual. Eles abrem espaço para a criatividade a novos níveis.</p>
+                <strong>Principais Obras:</strong>
+                <ul>
+                    <li><a href="https://static.wixstatic.com/media/345484_e7548a12599045ee9a79ff657d592d28~mv2.jpg">O homem com uma câmera, 1929</a></li>
+                    <li><a href="https://www.moma.org/interactives/exhibitions/1997/sternbergbrothers/jpgs/stenberg1_375.jpg">The Man from the Forest, 1928</a></li>
+                    <li><a href="https://www.moma.org/interactives/exhibitions/1997/sternbergbrothers/jpgs/stenberg3_375.jpg">General, 1929</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>Vem construir uma arte revolucionária com a gente, <strong>Filie-se!</strong></p>
+            <form action="#">
+                <input type="email" placeholder="Seu e-mail" required>
+                <button type="submit">Inscrever</button>
+            </form>
+        </div>
+    </footer>
+</body>
 </html>
