@@ -5,159 +5,211 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coletivo Revolui</title>
     <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
+        /* Estilo global do corpo */
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            background-color: #efefef;
             color: #333;
         }
-
+        /* Estilo do cabeçalho */
         header {
-            background: #e74c3c;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #222;
             color: #fff;
-            padding: 10px 0;
-            text-align: center;
+            padding: 20px;
         }
-
-        .logo img {
-            max-width: 150px;
+        /* Estilo da navegação */
+        header nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
         }
-
-        nav ul {
-            list-style: none;
+        header nav ul li {
+            margin-left: 20px;
         }
-
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-
-        nav ul li a {
+        header nav ul li a {
             color: #fff;
             text-decoration: none;
+            padding: 10px;
+            transition: background 0.3s;
         }
-
+        header nav ul li a:hover {
+            background: #444;
+        }
+        /* Estilo do conteúdo principal */
         main {
             padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
         }
-
-        h2 {
-            margin-bottom: 15px;
-        }
-
+        /* Estilo das seções dos artistas */
         .artista {
-            margin-bottom: 30px;
-            padding: 15px;
-            background: #fff;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        footer {
-            background: #333;
-            color: #fff;
+            flex: 1;
+            min-width: 300px;
+            background: #dac8b3; /* Cor de fundo alterada */
+            border-radius: 8px;
             padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             text-align: center;
         }
-
-        .footer-content form {
+        h1, h2 {
+            color: #c00;
+        }
+        /* Estilo das obras de arte */
+        .artwork {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+        .artwork img {
+            max-width: 200px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        /* Estilo do rodapé */
+        footer {
+            background: #222;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        /* Estilo do chamado à ação */
+        .cta {
             margin-top: 10px;
+            font-size: 1.2em;
+            font-weight: bold;
         }
-
-        .footer-content input[type="email"] {
+        /* Estilo do botão */
+        .button {
+            background: #c00;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+        .button:hover {
+            background: #900;
+        }
+        /* Estilo do formulário */
+        .formulario {
+            margin-top: 20px;
+            padding: 15px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .formulario input,
+        .formulario button {
+            width: 100%;
             padding: 10px;
-            border: none;
+            margin: 5px 0;
+            border: 1px solid #ccc;
             border-radius: 5px;
-            margin-right: 10px;
         }
-
-        .footer-content button {
-            padding: 10px 15px;
-            border: none;
-            border-radius: 5px;
-            background: #e74c3c;
+        .formulario button {
+            background: #c00;
             color: #fff;
             cursor: pointer;
+            transition: background 0.3s;
+        }
+        .formulario button:hover {
+            background: #900;
         }
     </style>
 </head>
 <body>
+    <!-- Cabeçalho com logo e navegação -->
     <header>
         <div class="logo">
-            <img src="https://i.postimg.cc/sD6K4zZs/temp-Image-Dv-Nia-K.avif" alt="Logo do Coletivo Revolui">
+            <img src="https://i.postimg.cc/sD6K4zZs/temp-Image-Dv-Nia-K.avif" alt="Logo Coletivo Revolui" style="height: 50px;">
         </div>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#artistas">Artistas</a></li>
-                <li><a href="#sobre">Sobre nós</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
                 <li><a href="#contato">Contato</a></li>
                 <li><a href="#manifesto">Manifesto Comunista</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- Conteúdo principal -->
     <main>
+        <!-- Seção sobre o coletivo -->
         <section id="sobre">
-            <h2>Sobre nós</h2>
-            <p>
-                O Coletivo Revolui é uma força criativa dedicada à transformação através da arte. Inspirados pelos ideais revolucionários do Construtivismo Russo, nossa missão é conectar a estética moderna à função prática, valorizando a geometria, a inovação e o impacto social. Atuamos como engenheiros visuais, construindo experiências que unem arte e tecnologia, alinhadas à produção contemporânea.
-                <br><br>
-                Como coletivo, acreditamos que a arte não é um fim, mas um meio para transformar a sociedade. Nossas criações são construções de ideias — um convite para ver o mundo de forma mais eficiente, funcional e bela.
-            </p>
-            <p><strong>Simplifique e Revolucione</strong></p>
+            <h1>Sobre Nós</h1>
+            <p>O Coletivo Revolui é uma força criativa dedicada à transformação através da arte. Inspirados pelos ideais revolucionários do Construtivismo Russo, nossa missão é conectar a estética moderna à função prática, valorizando a geometria, a inovação e o impacto social. Atuamos como engenheiros visuais, construindo experiências que unem arte e tecnologia, alinhadas à produção contemporânea.</p>
+            <p>Como coletivo, acreditamos que a arte não é um fim, mas um meio para transformar a sociedade. Nossas criações são construções de ideias — um convite para ver o mundo de forma mais eficiente, funcional e bela.</p>
+            <h2>Simplifique e Revolucione</h2>
         </section>
 
-        <section id="artistas">
-            <h2>Artistas</h2>
-
-            <div class="artista">
-                <h3>Alexander Rodchenko</h3>
-                <p>Alexander Rodchenko é um criador que desafia limites e redefine a arte visual. Ele trabalha para unir forma e função em projetos que servem ao progresso social.</p>
-                <strong>Principais Obras:</strong>
-                <ul>
-                    <li><a href="https://www.wikiart.org/pt/alexander-rodchenko/books-1924">Books, 1924</a></li>
-                    <li><a href="https://www.wikiart.org/pt/alexander-rodchenko/cover-of-book-about-that-1923">Cover book "About that", 1923</a></li>
-                    <li><a href="https://www.wikiart.org/pt/alexander-rodchenko/promotional-poster-for-rezinotrest-1923">Promotional poster for Rezinotrest, 1923</a></li>
-                </ul>
+        <!-- Seções dos artistas lado a lado -->
+        <div class="artista" id="alexander-rodchenko">
+            <h1>Alexander Rodchenko</h1>
+            <img src="https://i.postimg.cc/q7tg61Mk/temp-Imaget907-HM.avif" alt="Alexander Rodchenko" style="max-width: 200px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+            <p>Alexander Rodchenko é um criador que desafia limites e redefine a arte visual.</p>
+            <h3>Principais Obras:</h3>
+            <div class="artwork">
+                <img src="https://i.postimg.cc/nz4QR4Rq/temp-Image-E3-JXjv.avif" alt="Books, 1924">
+                <img src="https://i.postimg.cc/XqxB3V0J/temp-Imagepoj-Uj-G.avif" alt="Cover book 'About that', 1923">
+                <img src="https://i.postimg.cc/9QDw55gm/temp-Imagers-IX1z.avif" alt="Promotional poster for Rezinotrest, 1923">
             </div>
+        </div>
 
-            <div class="artista">
-                <h3>El Lissitzky</h3>
-                <p>El Lissitzky é um visionário que reimagina o espaço e a comunicação através da arte. Sua missão é construir um diálogo entre arte e tecnologia.</p>
-                <strong>Principais Obras:</strong>
-                <ul>
-                    <li><a href="https://www.wikiart.org/pt/el-lissitzky/building-in-moscow-1929">Building in Moscow, 1929</a></li>
-                    <li><a href="https://www.wikiart.org/pt/el-lissitzky/novo-homem-1923">Novo Homem, 1923</a></li>
-                    <li><a href="https://www.wikiart.org/pt/el-lissitzky/beat-the-whites-with-the-red-wedge-1920">Beat the Whites with the Red Wedge, 1920</a></li>
-                </ul>
+        <div class="artista" id="el-lissitzky">
+            <h1>El Lissitzky</h1>
+            <img src="https://i.postimg.cc/vBfB3DVk/temp-Image-Pdxd-Yw.avif" alt="El Lissitzky" style="max-width: 200px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+            <p>El Lissitzky é um visionário que reimagina o espaço e a comunicação através da arte.</p>
+            <h3>Principais Obras:</h3>
+            <div class="artwork">
+                <img src="https://i.postimg.cc/Fzhk2Y88/temp-Imagexoz-Wn7.avif" alt="Building in Moscow, 1929">
+                <img src="https://i.postimg.cc/nhNjnRNv/temp-Image-HIBIZe.avif" alt="Novo Homem, 1923">
+                <img src="https://i.postimg.cc/xTTb5bKb/temp-Imageoey-L8f.avif" alt="Beat the Whites with the Red Wedge, 1920">
             </div>
+        </div>
 
-            <div class="artista">
-                <h3>Vladimir e Georgi Stenberg</h3>
-                <p>Vladimir e Georgi Stenberg são mestres em criar movimento e energia visual. Eles abrem espaço para a criatividade a novos níveis.</p>
-                <strong>Principais Obras:</strong>
-                <ul>
-                    <li><a href="https://static.wixstatic.com/media/345484_e7548a12599045ee9a79ff657d592d28~mv2.jpg">O homem com uma câmera, 1929</a></li>
-                    <li><a href="https://www.moma.org/interactives/exhibitions/1997/sternbergbrothers/jpgs/stenberg1_375.jpg">The Man from the Forest, 1928</a></li>
-                    <li><a href="https://www.moma.org/interactives/exhibitions/1997/sternbergbrothers/jpgs/stenberg3_375.jpg">General, 1929</a></li>
-                </ul>
+        <div class="artista" id="vladimir-georgi-stenberg">
+            <h1>Vladimir e Georgi Stenberg</h1>
+            <img src="https://i.postimg.cc/yNwxm0k0/temp-Image79v-TXJ.avif" alt="Vladimir e Georgi Stenberg" style="max-width: 200px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+            <p>Vladimir e Georgi Stenberg são mestres em criar movimento e energia visual.</p>
+            <h3>Principais Obras:</h3>
+            <div class="artwork">
+                <img src="https://i.postimg.cc/m2X152wp/temp-Imagej-TUEk-T.avif" alt="O homem com uma câmera, 1929">
+                <img src="https://i.postimg.cc/66hvChGX/temp-Imageg9y-TYh.avif" alt="The Man from the Forest, 1928">
+                <img src="https://i.postimg.cc/8CWFcdVx/temp-Image-Yy-Jpp-S.avif" alt="General, 1929">
             </div>
-        </section>
+        </div>
     </main>
 
+    <!-- Rodapé com informações e chamada à ação -->
     <footer>
-        <div class="footer-content">
+        <div class="logo">
+            <img src="https://i.postimg.cc/sD6K4zZs/temp-Image-Dv-Nia-K.avif" alt="Logo Coletivo Revolui" style="height: 50px;">
+        </div>
+        <div class="cta">
             <p>Vem construir uma arte revolucionária com a gente, <strong>Filie-se!</strong></p>
-            <form action="#">
-                <input type="email" placeholder="Seu e-mail" required>
-                <button type="submit">Inscrever</button>
+        </div>
+        <!-- Formulário de inscrição -->
+        <div class="formulario">
+            <h2>Inscreva-se</h2>
+            <form action="#" method="post">
+                <input type="text" name="nome" placeholder="Seu Nome" required>
+                <input type="email" name="email" placeholder="Seu Email" required>
+                <button type="submit">Inscrever-se</button>
             </form>
         </div>
     </footer>
